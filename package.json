@@ -1,0 +1,24 @@
+{
+  "name": "webspeech",
+  "version": "1.0.0",
+  "description": "Web speech game from beginnerjavascript course",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GryNagel/webspeech.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GryNagel/webspeech/issues"
+  },
+  "homepage": "https://github.com/GryNagel/webspeech#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "parcel-bundler": "^1.12.4",
+    "save-dev": "0.0.1-security"
+  }
+}
