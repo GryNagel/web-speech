@@ -23,7 +23,6 @@ function start() {
     recognition.interimResults = true;
     recognition.onresult = handleResult;
     recognition.start();
-    console.log(colorsByLength)
 }
 
 start();
