@@ -30,6 +30,13 @@ h1 {
     color: rgba(255, 255, 255, 0.75);
 }
 
+.reset{
+    background: transparent;
+    border: 3px solid midnightblue; 
+    border-radius: 2px;
+    cursor: pointer; 
+}
+
 @keyframes jump {
     from {
         transform: scale(2.5) rotate(-3deg);

@@ -1,7 +1,8 @@
-import { handleResult } from './handlers';
+import { handleResult, renderScore, resetScore } from './handlers';
 import { colorsByLength, isDark } from './colors';
 
 const colorsEl = document.querySelector('.colors');
+const resetButton = document.querySelector('.reset'); 
 
 function displayColors() {
     return colorsByLength.map(color => {
@@ -17,12 +18,13 @@ function start() {
         return;
     }
     console.log('Starting...');
-
+    renderScore(); 
     const recognition = new SpeechRecognition();
     recognition.continuous = true;
     recognition.interimResults = true;
     recognition.onresult = handleResult;
     recognition.start();
+    resetButton.addEventListener('click', resetScore); 
 }
 
 start();
